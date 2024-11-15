@@ -1,0 +1,90 @@
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color:lightcyan;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.create-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: lightcoral;
+}
+
+/* Container for each sticky note */
+.sticky-note {
+    width: 250px;
+    background-color: rgb(238, 202, 144);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transform: rotate(-2deg); /* Slight tilt for effect */
+}
+
+/* Header for each sticky note */
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Title of the sticky note */
+.note-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Save button inside the sticky note */
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Textarea for note content */
+.note-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+}

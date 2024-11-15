@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="create-note" class="create-btn">Create Sticky Note</button>
+        <div id="sticky-notes-container"></div>
+    </div>
+    <div class="sticky-note">
+        <div class="note-header">
+            <span class="note-title">Note 1</span>
+            <button class="close-btn">&times;</button>
+            <textarea id="note-1-content"></textarea>
+
+        </div>
+        <div class="note-content">
+        </div>
+    </div>
+
+    <div class="sticky-note">
+        <div class="note-header">
+            <span class="note-title">Note 2</span>
+            <textarea id="note-2-content"></textarea>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="note-content">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
